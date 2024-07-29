@@ -10,7 +10,7 @@ function NavBar() {
   const handleNavBar = () => setToggleMenu(!toggleMenu);
 
   return (
-    <div className='navbar' id='navbar'>
+    <nav className='navbar' id='navbar'>
       <div className='container navbar-content flex'>
         <div className='brand-and-toggler flex flex-sb'>
           <Link to='/' className='navbar-brand flex'>
@@ -41,7 +41,7 @@ function NavBar() {
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 
