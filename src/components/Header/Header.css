@@ -1,17 +1,20 @@
 .header-content {
-  min-height: 75vh;
-  background: linear-gradient(rgba(141, 39, 174, 0.3),
-      rgba(141, 39, 174, 0.5));
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  min-height: 75vh;
+  background: linear-gradient(rgba(100, 149, 237, 0.5), rgba(70, 130, 180, 0.7));
+  padding: 2rem;
 }
 
 .header-title {
-  font-size: 4.2rem;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .header-text {
-  margin-top: -1.8rem;
-  margin-bottom: 2.8rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
   opacity: 0.8;
-  max-width: 770px;
 }

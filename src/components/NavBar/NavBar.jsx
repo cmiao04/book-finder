@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './NavBar.css';
-import { HiOutlineMenuAlt3 } from 'react-icons/hi';
+import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 
 function NavBar() {
 
@@ -19,7 +19,7 @@ function NavBar() {
             </span>
           </Link>
           <button type='button' className='navbar-toggler-btn' onClick={handleNavBar}>
-            <HiOutlineMenuAlt3 size={35} style={{ color: `${toggleMenu ? "#fff" : "#010101"}` }} />
+            <HiOutlineMenuAlt1 size={35} style={{ color: `${toggleMenu ? "#fff" : "#010101"}` }} />
           </button>
         </div>
 
@@ -27,13 +27,15 @@ function NavBar() {
           <ul className='navbar-nav'>
 
             <li className='nav-item'>
-              <Link to='/' className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>
+              <Link to='/' className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'
+                onClick={() => setToggleMenu(false)}>
                 Home
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link to='/about' className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>
+              <Link to='/about' className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'
+                onClick={() => setToggleMenu(false)}>
                 About
               </Link>
             </li>

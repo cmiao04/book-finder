@@ -1,13 +1,28 @@
 .about {
   padding: 3rem 0;
+  background-color: var(--grey-color);
 }
 
-.about-content {
-  gap: 4rem;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-text {
+  text-align: left;
 }
 
 .about-title {
-  margin: 1rem 0;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .about-img img {
@@ -15,20 +30,22 @@
 }
 
 .about-text p {
-  margin: 1.8rem 0;
-  opacity: 0.8;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  color: #555;
 }
 
-@media screen and(min-width:800px) {
-  .about-content {
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 768px) {
+  .section-title h2 {
+    font-size: 2.2rem;
   }
 
   .about-title {
-    margin-top: 0;
+    font-size: 2rem;
   }
 
-  .about-img img {
-    margin-left: 0;
+  .about-text p {
+    font-size: 1.1rem;
   }
 }
